@@ -26,6 +26,7 @@ main {
   border-radius: 5px;
   padding: 10px;
   height: 100%;
+  box-shadow: 2px 4px 10px gold;
 }
 .introjavascript  p, h3{
   margin-top: 10px;
