@@ -1,0 +1,92 @@
+// Funciones
+
+// Las funciones son las tareas o sentencias que va a llevar a cabo el navegador. Existen 2 tipos de funciones
+// 1) Declarativas
+// 2) De expresión
+// Ambas pueden llevar parámetros, que son los datos que necesitan para ejecutarse.
+// Cada parámetro va separado por una coma.
+// Cada instrucción que tenga la función debe terminar con ; .
+// Si queremos que una función nos dé un numero o dato tenemos que usar la siguiente sintaxis:
+
+// return El dato que queremos que nos dé;
+
+// Las funciones declarativas tienen la siguiente sintaxis:
+
+// function Nombre de la función (Parámetros de la función) {Instrucciones}
+
+// Un ejemplo de una función puede ser una suma:
+
+// _
+// function suma (a,b) {return a+b;}_
+
+// Las funciones de expresión son aquellas que guardamos en una variable, por lo tanto, no es necesario nombrarlas y tienen la siguiente sintaxis:
+
+// _var Nombre de la variable = function(Parametros){Instrucciones}.
+// _
+
+// Un ejemplo de una función de expresión sería:
+
+// var suma = function(a,b){return a+b;}
+
+// Para ejecutar las funciones debemos usar la siguiente sintaxis:
+
+// _Nombre de la funcion(Parametros función); _
+
+// Si la función no tiene ningún parámetro, únicamente se escribe:
+
+// _Nombre de la función(); _
+
+// una funcion que tambien necesita son parametros los que va a utilizar
+//FUNCION DECLARATIVA
+//==================== la funcion va a guardar ciertos valores
+function miFuncion(){
+  return 3; 
+}
+miFuncion(); //llamar la funcion
+//Ejemplo funcion declarativa
+function saludarEstudiantes(estudiante){
+  console.log(estudiante);
+}
+saludarEstudiantes("Jimmy");
+//Ejemplo funcion cadena de texto
+function saludarEstudiantes(estudiante){
+  console.log(`Hola ${estudiante}`);
+}
+saludarEstudiantes("Jimmy");
+//FUNCION EXPRESION
+//================== variables tambien puede guardar otro tipo de valores, una varible que almacena una funcion, conocidad tambien como funciones anonimas.
+var miFuncion = function(a,b){
+  return a + b;
+}
+miFuncion();
+
+//Ejemplo de return
+function sumar(a,b){
+  var resultado = a + b;
+  return resultado;
+}
+sumar (1,2);
+
+// Cuando hablamos de funciones en JavaScript, tenemos dos tipos de funciones: Funciones Declarativas (function declaration / function statement) y Expresiones de función (function expression / funciones anónimas).
+// Funciones Declarativas:
+
+// En las funciones declarativas, utilizamos la palabra reservada function al inicio para poder declarar la función:
+function saludar(nombre) {
+	console.log(`Hola ${nombre}`);
+}
+saludar('Diego');
+
+// Expresión de función:
+
+// En la expresión de función, la declaración se inicia con la palabra reservada var, donde se generará una variable que guardará una función anónima.
+var nombre = function(nombre){
+  console.log(`Hola ${nombre}`)
+}
+nombre('Diego');
+
+// En la expresión de función, la función podría o no llevar nombre, aunque es más común que se hagan anónimas.
+// Diferencias:
+
+// A las funciones declarativas se les aplica hoisting, y a la expresión de función, no. Ya que el hoisting solo se aplica en las palabras reservadas var y function.
+
+// Lo que quiere decir que con las funciones declarativas, podemos mandar llamar la función antes de que ésta sea declarada, y con la expresión de función, no, tendríamos que declararla primero, y después mandarla llamar.

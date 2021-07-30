@@ -1,0 +1,73 @@
+¿Cómo nace Javascript?
+Nace con la necesidad de generar dinamismo en las páginas web y que a su vez los usuarios y las empresas pudieran interactuar unos con otros.
+¿Qué es Javascript?
+Es un lenguaje interpretado, orientado a objetos, débilmente tipado y dinámico.
+Débilmente tipado
+Se pueden hacer operaciones entre tipos distintos de datos (enteros con strings, booleanos con enteros, etc). Ejemplo:
+4 + "7"; //47 esto es llamado un string no es un numero si no una letra
+4 * "7"; //28 lo toma como un texto
+2 + true; //3 de tipo booleano
+false - 3 //-3 
+Dinámico
+Corre directamente en la etapa de Runetime sin una etapa de compilación previa. Esto permite probar nuestro código inmediatamente; pero también es lo que hace que los errores se muestren hasta que se ejecuta el programa.
+¿Realmente es Javascript un lenguaje interpretado?
+Si, y la razón es que le navegador lee linea por linea nuestro código el cuál le indica lo que tiene que hacer, sin la necesidad de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador
+Javascript es Basckwards Compatible
+Todas las funciones nuevas que salen de Javascript no dañarán el trabajo ya hecho, pero no se podrá utilizar en nuestro entorno de trabajo inmediatamente. Para solucionar esto está Babel que permite utilizar las nuevas características del lenguaje pero lo transforma a una versión que el navegador pueda entender.
+
+APUNTES
+1.- JavaScript tiene una comunidad enorme de desarrolladores que te pueden ir ayudando a generar diferentes cosas.
+
+    Si solo estuvieras interesado en trabajar aplicaciones web tienes muchos frameworks y librerías construidas en JavaScript que te van a ayudar a hacer proyectos de forma mucho mas rápida, eficiente y robusta (Angular, View, React,entre otros)
+
+    Si no quieres trabajar solo en aplicaciones Web puedes utilizar JavaScript con un framework que se llama React Native para poder construir aplicaciones nativas como Android y IOS.
+
+    Puedes construir aplicaciones de escritorio con JavaScript, usando un framework llamado Electron, pueden correr en Mac o Windows.
+
+    También puedes trabajar en la parte del Back-end o **IOT **(Internet Od Things) es un concepto que se refiere a una interconexion digital de objetos cotidianos con Internet. Esto con un Framework llamado NodeJS, el cual es un entorno de ejecución de JavaScript que corre directamente en el Back-end.
+
+
+
+
+
+
+Curso Basico de JavaScript
+=========================
+Aprender todos los fundamentos de del lenguaje de programacion,
+Como nace JavaScript ==> Las paginas eran muy estaticas solo podiamos leer texto y ver imagenes y eso era todos
+generar dinamismo a las paginas, que las personas y empresas pudieran interactuar en internet. JavaScript ayuda en la intereaccion de las personas con estas paginas  o generar su propio contenido en la plataforma de otros esta orientado 100% a trabajar web generar paginas dinamicas los cuales se convierten en aplicaciones web.
+Es un lenguaje interpretado, orientado a objetos, debilmente tipado y dinamico.
+Orientado a objeto ejemp Al registro de un usuario en vez de generar archivos por cada un nuevo usuario, se genera un objeto llamado "usuario" y cada persona que se registre pasa a formar parte de este objeto "usuario" en una base de datos.
+Debilmente tipado == otros lenguajes no pasan este tipo de error 
+4 + "7"; //47 esto es llamado un string no es un numero si no una letra
+4 * "7"; //28 lo toma como un texto
+2 + true; //3 de tipo booleano
+false - 3 //-3 
+Dinamico
+JavaScript corre directamente en runtime no necesita una etapa de compilacion
+Forwards Ser compatible con versiones futuras que incluir una adicion al lenguaje en un programa no causaria que se rompa si se ejecuta en un motor JS anterior. Js no es  compatible con versiones futuras.
+Js es Backwards Compatible La compatiblidad con versiones anteriores significa que cuando se acepta como JS vaalido, no habra un cambio futuro que haga que el codigo deje de funcionar
+Js Babel compilador 
+¿Por que JS?
+HTML  maquetacion y poner todo la informacion
+CSS Lenguaje de estilos para darle al html
+JS para hacer una pagina dinamica generar un applicacion web
+
+Aparte tenemos
+WebAssembly es un lenguaje nuevo que se puede utilizar para productos web ya no es necesario utilizar html css para hacer productos web.
+
+Desarrollo web tiene muchos frameworks y librerias ayudar hacer proyectos mas rapidos eficientes y robustas
+angular vue reactjs
+
+Desarrolllo de Apps para poder construir aplicaciones nativas en andriod y ios con "ReacNative"
+con javascript tambien podemos construir aplicaciones de escritorio con "Electron" mac o windows
+Backend/IOT 
+backend maneja las bases de datos, maneja las peticiones, las interecciones con "node js" 
+frontend todas las cosas que s epueden ver vizualizar y intereactuar por parte la pagina web parte mas de diseño
+IOT JS + nodejs trabajar aplicaciones, interent de las cosas, como hacer inteligente ciertos dispositivos conectados a internet.
+
+
+Elementos del Lenguaje: Dos componentes principales
+1.-Data que guardamos en memoria
+2.-Tareas (funciones) que haremos con esa data
+Editor de texto utilizaremos es Visual Studio Code
